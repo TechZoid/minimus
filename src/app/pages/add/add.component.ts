@@ -32,7 +32,7 @@ export class AddComponent implements OnInit, OnDestroy {
       this.temp = Math.ceil(Number(payload.main.temp));
     });
 
-    this.http.get('https://restcountries.eu/rest/v2/all').pipe((first())).subscribe((countries: Array<any>) => {
+    this.http.get('https://github.com/CliCreator/bangaloreMinimusAddon/blob/master/bangaloreAddOn').pipe((first())).subscribe((countries: Array<any>) => {
       countries.forEach((country: any) => {
         if (country.capital.length) {
           this.capitals.push(country.capital);
